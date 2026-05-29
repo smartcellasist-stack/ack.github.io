@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="SmartPhone Brasil — Os melhores iPhones 15, 16, 17, notebooks, TVs e tecnologia com os melhores preços da Amazon."/>
+<meta name="robots" content="index, follow"/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4449225172308722" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18147038757"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18147038757');</script>
+<title>SmartPhone Brasil 2026 — iPhones, Notebooks & Tecnologia</title>
+
+<!-- Geist Font (Vercel CDN) -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+
+<style>
+/* ═══════════════════════════════════════════
+   DESIGN TOKENS — Point of View: Apple-grade
+   Dark premium + titanium silver accents
+   ═══════════════════════════════════════════ */
+:root {
+  /* Color Hierarchy */
+  --bg:        #080808;
+  --bg1:       #0f0f0f;
+  --bg2:       #161616;
+  --bg3:       #1e1e1e;
+  --line:      rgba(255,255,255,0.07);
+  --line2:     rgba(255,255,255,0.12);
+
+  /* Text hierarchy */
+  --t1: #f5f5f7;       /* primary — Apple's exact off-white */
+  --t2: #a1a1a6;       /* secondary */
+  --t3: #6e6e73;       /* tertiary */
+
+  /* Accent palette */
+  --blue:   #0071e3;   /* Apple blue */
+  --blue2:  #147ce5;
+  --teal:   #30d158;   /* Apple green */
+  --gold:   #ffd60a;   /* Apple yellow */
+  --amazon: #ff9900;
+  --shopee: #ee4d2d;
+  --prime:  #00a8e1;
+
+  /* Typography — Geist only */
+  --f: 'Geist', -apple-system, sans-serif;
+
+  /* Spacing scale */
+  --r:   12px;
+  --r2:  20px;
+  --r3:  28px;
+}
+
+/* ═══════════ RESET ═══════════ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--f);
+  background: var(--bg);
+  color: var(--t1);
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+
+/* ═══════════ MOTION — The invisible layer ═══════════ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes pulse-dot {
+  0%,100% { opacity:1; transform:scale(1); }
+  50%     { opacity:.4; transform:scale(1.5); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .55s cubic-bezier(.16,1,.3,1), transform .55s cubic-bezier(.16,1,.3,1);
+}
+.reveal.in { opacity: 1; transform: none; }
+
+/* ═══════════ NAV ═══════════ */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  height: 52px;
+  display: flex; align-items: center;
+  padding: 0 24px; gap: 20px;
+  background: rgba(8,8,8,.82);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: .5px solid var(--line);
+}
+.nav-brand {
+  font-size: .95rem; font-weight: 700; letter-spacing: -.02em;
+  color: var(--t1); margin-right: auto;
+  display: flex; align-items: center; gap: 6px;
+}
+.nav-brand span { color: var(--blue); }
+.nav-links {
+  display: flex; gap: 20px; list-style: none;
+}
+.nav-links a {
+  font-size: .8rem; font-weight: 400; color: var(--t2);
+  transition: color .15s;
+}
+.nav-links a:hover { color: var(--t1); }
+.nav-pill {
+  font-size: .78rem; font-weight: 600;
+  padding: 6px 14px; border-radius: 100px;
+  transition: filter .15s, transform .15s;
+  white-space: nowrap;
+}
+.nav-pill:hover { filter: brightness(1.15); transform: translateY(-1px); }
+.np-amazon { background: var(--amazon); color: #000; }
+.np-prime  { background: var(--prime);  color: #fff; }
+.np-shopee { background: var(--shopee); color: #fff; }
+.nav-menu-btn {
+  display: none; background: none; border: none; cursor: pointer;
+  color: var(--t1); font-size: 1.3rem; padding: 4px;
+}
+
+/* ═══════════ TICKER ═══════════ */
+.ticker {
+  overflow: hidden; height: 36px;
+  display: flex; align-items: center;
+  background: var(--bg1);
+  border-bottom: .5px solid var(--line);
+  margin-top: 52px;
+}
+.ticker-track {
+  display: flex; align-items: center; gap: 0;
+  white-space: nowrap;
+  animation: ticker 28s linear infinite;
+}
+.ticker-item {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 0 32px;
+  font-size: .72rem; font-weight: 500; letter-spacing: .04em;
+  color: var(--t3); text-transform: uppercase;
+}
+.ticker-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ═══════════ HERO ═══════════ */
+.hero {
+  min-height: 88vh;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: flex-start;
+  padding: 80px 64px 64px;
+  position: relative; overflow: hidden;
+}
+.hero-glow {
+  position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  background:
+    radial-gradient(ellipse 55% 60% at 75% 40%, rgba(0,113,227,.1) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 50% at 20% 70%, rgba(48,209,88,.05) 0%, transparent 60%);
+}
+.hero-grid-lines {
+  position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  background-image:
+    linear-gradient(var(--line) .5px, transparent .5px),
+    linear-gradient(90deg, var(--line) .5px, transparent .5px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 80%);
+}
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 5px 14px; border-radius: 100px;
+  background: rgba(0,113,227,.12);
+  border: .5px solid rgba(0,113,227,.35);
+  font-size: .72rem; font-weight: 600; letter-spacing: .06em;
+  text-transform: uppercase; color: #5ac8fa;
+  margin-bottom: 28px; position: relative; z-index: 1;
+  animation: fadeUp .5s ease both;
+}
+.hero-eyebrow::before {
+  content: ''; width: 6px; height: 6px; border-radius: 50%;
+  background: #5ac8fa; animation: pulse-dot 1.8s infinite;
+}
+h1 {
+  font-size: clamp(2.8rem, 7vw, 6.5rem);
+  font-weight: 800; line-height: .95; letter-spacing: -.04em;
+  position: relative; z-index: 1;
+  animation: fadeUp .6s .08s ease both;
+}
+h1 .em-blue { color: var(--blue); }
+h1 .em-outline {
+  -webkit-text-stroke: 1.5px rgba(255,255,255,.25);
+  color: transparent;
+}
+.hero-sub {
+  max-width: 480px; font-size: 1.05rem; font-weight: 300;
+  color: var(--t2); line-height: 1.7; margin: 28px 0 36px;
+  position: relative; z-index: 1;
+  animation: fadeUp .6s .16s ease both;
+}
+.hero-ctas {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  position: relative; z-index: 1;
+  animation: fadeUp .6s .24s ease both;
+}
+.cta-primary {
+  padding: 13px 26px; border-radius: 100px;
+  background: var(--blue); color: #fff;
+  font-size: .9rem; font-weight: 600; font-family: var(--f);
+  border: none; cursor: pointer;
+  transition: background .2s, transform .2s, box-shadow .2s;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.cta-primary:hover {
+  background: var(--blue2);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,113,227,.4);
+}
+.cta-ghost {
+  padding: 12px 26px; border-radius: 100px;
+  background: transparent; color: var(--t1);
+  font-size: .9rem; font-weight: 500; font-family: var(--f);
+  border: .5px solid var(--line2); cursor: pointer;
+  transition: border-color .2s, background .2s;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.cta-ghost:hover {
+  border-color: rgba(255,255,255,.3);
+  background: rgba(255,255,255,.04);
+}
+.hero-floats {
+  position: absolute; right: 64px; top: 50%; transform: translateY(-50%);
+  display: flex; flex-direction: column; gap: 12px; z-index: 1;
+  animation: fadeIn .8s .4s ease both;
+}
+.float-stat {
+  background: var(--bg2); border: .5px solid var(--line2);
+  border-radius: var(--r2); padding: 16px 20px;
+  backdrop-filter: blur(10px);
+  min-width: 160px;
+}
+.float-stat-num {
+  font-size: 1.8rem; font-weight: 800; letter-spacing: -.04em;
+  line-height: 1; margin-bottom: 4px;
+}
+.float-stat-label { font-size: .72rem; font-weight: 400; color: var(--t3); }
+
+/* ═══════════ SECTION WRAPPER ═══════════ */
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 72px 0; }
+.section-eyebrow {
+  font-size: .72rem; font-weight: 600; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--t3);
+  margin-bottom: 10px;
+}
+.section-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 800; letter-spacing: -.03em; line-height: 1.1;
+  margin-bottom: 40px;
+}
+.section-title em { font-style: normal; color: var(--blue); }
+.section-header {
+  display: flex; align-items: flex-end;
+  justify-content: space-between; margin-bottom: 28px; gap: 16px;
+}
+.see-all {
+  font-size: .8rem; font-weight: 500; color: var(--blue);
+  white-space: nowrap; transition: opacity .15s;
+}
+.see-all:hover { opacity: .7; }
+
+/* ═══════════ CATS ═══════════ */
+.cats { display: flex; gap: 8px; flex-wrap: wrap; }
+.cat-pill {
+  padding: 8px 16px; border-radius: 100px;
+  background: var(--bg2); border: .5px solid var(--line);
+  font-size: .8rem; font-weight: 500; color: var(--t2);
+  transition: background .15s, border-color .15s, color .15s;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.cat-pill:hover {
+  background: var(--bg3);
+  border-color: var(--line2);
+  color: var(--t1);
+}
+
+/* ═══════════ PRODUCT CARDS ═══════════ */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 16px;
+}
+.prod-card {
+  background: var(--bg1);
+  border: .5px solid var(--line);
+  border-radius: var(--r2);
+  padding: 20px;
+  display: flex; flex-direction: column; gap: 8px;
+  position: relative; overflow: hidden;
+  transition: border-color .2s, transform .25s, box-shadow .25s;
+}
+.prod-card:hover {
+  border-color: var(--line2);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 48px rgba(0,0,0,.5);
+}
+.prod-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.12), transparent);
+}
+.badge-tag {
+  position: absolute; top: 14px; left: 14px;
+  font-size: .65rem; font-weight: 700; letter-spacing: .04em;
+  text-transform: uppercase;
+  padding: 3px 8px; border-radius: 6px;
+  background: #dc2626; color: #fff;
+}
+.badge-new   { background: #5856d6 !important; }
+.badge-value { background: #1a7f4e !important; }
+.badge-top   { background: #b45309 !important; }
+
+.prod-icon {
+  font-size: 2.4rem; text-align: center;
+  margin: 20px 0 8px;
+}
+.prod-brand {
+  font-size: .68rem; font-weight: 600; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--t3);
+}
+.prod-name {
+  font-size: .9rem; font-weight: 600; line-height: 1.3; color: var(--t1);
+}
+.prod-stars { font-size: .75rem; color: #ffd60a; }
+.prod-price-new {
+  font-size: 1.45rem; font-weight: 800; letter-spacing: -.03em;
+  color: var(--t1);
+}
+.prod-price-old {
+  font-size: .8rem; color: var(--t3);
+  text-decoration: line-through;
+}
+.prod-discount { font-size: .78rem; color: var(--teal); font-weight: 600; }
+.prod-cta {
+  margin-top: auto; display: block; text-align: center;
+  padding: 10px; border-radius: var(--r);
+  background: var(--amazon); color: #000;
+  font-size: .82rem; font-weight: 700; font-family: var(--f);
+  transition: filter .15s, transform .15s;
+}
+.prod-cta:hover { filter: brightness(1.12); transform: translateY(-1px); }
+.prod-cta.shopee-cta { background: var(--shopee); color: #fff; }
+
+/* ═══════════ BANNERS ═══════════ */
+.banner {
+  border-radius: var(--r3); padding: 44px 40px;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 24px; flex-wrap: wrap;
+  margin: 40px 0;
+  position: relative; overflow: hidden;
+}
+.banner::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,.03), transparent);
+}
+.banner-prime {
+  background: linear-gradient(135deg, #001f4d 0%, #003580 40%, #0050b3 100%);
+  border: .5px solid rgba(0,168,225,.2);
+}
+.banner-shopee {
+  background: linear-gradient(135deg, #7a1a0c 0%, #b53320 40%, #ee4d2d 100%);
+  border: .5px solid rgba(238,77,45,.2);
+}
+.banner h2 { font-size: 1.3rem; font-weight: 800; margin-bottom: 8px; }
+.banner p  { font-size: .9rem; color: rgba(255,255,255,.75); margin-bottom: 0; }
+.banner-cta {
+  padding: 12px 28px; border-radius: 100px;
+  font-size: .88rem; font-weight: 700; font-family: var(--f);
+  white-space: nowrap;
+  transition: transform .15s, box-shadow .15s;
+}
+.banner-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.4); }
+.bc-prime  { background: #fff; color: #0050b3; }
+.bc-shopee { background: #fff; color: #ee4d2d; }
+
+/* ═══════════ COMPARISON TABLE ═══════════ */
+.table-wrap { overflow-x: auto; border-radius: var(--r2); border: .5px solid var(--line); }
+table {
+  width: 100%; border-collapse: collapse;
+  font-size: .85rem;
+}
+thead th {
+  background: var(--bg2); padding: 14px 18px;
+  text-align: left; font-weight: 700; font-size: .78rem;
+  letter-spacing: .04em; text-transform: uppercase; color: var(--t2);
+  border-bottom: .5px solid var(--line);
+  white-space: nowrap;
+}
+tbody td {
+  padding: 13px 18px; border-bottom: .5px solid var(--line);
+  color: var(--t1); vertical-align: middle;
+}
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:hover td { background: var(--bg2); }
+.td-highlight { color: var(--blue); font-weight: 600; }
+.td-new { color: var(--teal); font-weight: 600; }
+
+/* ═══════════ PROS / CONS ═══════════ */
+.pros-cons-wrap {
+  background: var(--bg1); border: .5px solid var(--line);
+  border-radius: var(--r2); padding: 28px;
+  margin-bottom: 16px;
+}
+.pros-cons-wrap h3 {
+  font-size: 1rem; font-weight: 700; margin-bottom: 18px;
+}
+.pc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.pc-col {
+  background: var(--bg2); border-radius: var(--r);
+  padding: 16px;
+}
+.pc-col.good { border-top: 2px solid var(--teal); }
+.pc-col.bad  { border-top: 2px solid #ff453a; }
+.pc-col h4 { font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 12px; }
+.pc-col.good h4 { color: var(--teal); }
+.pc-col.bad  h4 { color: #ff453a; }
+.pc-col li  { font-size: .82rem; color: var(--t2); margin-left: 14px; margin-bottom: 6px; line-height: 1.55; }
+
+/* ═══════════ DECISION ═══════════ */
+.decision-wrap {
+  background: var(--bg1); border: .5px solid var(--line);
+  border-radius: var(--r2); padding: 28px; margin-bottom: 16px;
+}
+.decision-wrap h3 {
+  font-size: 1rem; font-weight: 700; margin-bottom: 20px; text-align: center;
+}
+.dec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.dec-card {
+  background: var(--bg2); border-radius: var(--r);
+  padding: 18px; border: .5px solid var(--line);
+}
+.dec-card h4 { font-size: .82rem; font-weight: 700; margin-bottom: 10px; }
+.dec-card.sim h4 { color: var(--teal); }
+.dec-card.nao h4 { color: #ff9f0a; }
+.dec-card li { font-size: .8rem; color: var(--t2); margin-left: 14px; margin-bottom: 5px; line-height: 1.6; }
+.dec-cta {
+  display: block; text-align: center; margin-top: 14px;
+  padding: 10px; border-radius: var(--r);
+  font-size: .82rem; font-weight: 700; font-family: var(--f);
+  transition: filter .15s;
+}
+.dec-cta:hover { filter: brightness(1.1); }
+.dec-cta.amazon { background: var(--amazon); color: #000; }
+.dec-cta.ghost  { background: var(--bg3); color: var(--t1); border: .5px solid var(--line2); }
+
+/* ═══════════ PODCAST ═══════════ */
+.podcast-wrap {
+  background: var(--bg1); border: .5px solid var(--line);
+  border-radius: var(--r2); padding: 28px;
+}
+.podcast-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--bg3); border: .5px solid var(--line2);
+  border-radius: 100px; padding: 4px 12px;
+  font-size: .72rem; font-weight: 500; color: var(--t2);
+  margin-bottom: 14px;
+}
+.podcast-wrap h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 6px; }
+.podcast-wrap > p { font-size: .85rem; color: var(--t2); margin-bottom: 20px; line-height: 1.6; }
+.yt-embed {
+  position: relative; padding-bottom: 56.25%;
+  height: 0; border-radius: var(--r); overflow: hidden;
+  background: var(--bg2); margin-bottom: 16px;
+}
+.yt-embed iframe { position: absolute; top:0; left:0; width:100%; height:100%; border:none; }
+.yt-placeholder {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 12px;
+}
+.yt-placeholder span { font-size: 3rem; }
+.yt-placeholder p { font-size: .82rem; color: var(--t3); text-align: center; margin: 0; }
+.podcast-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+.podcast-tag {
+  background: var(--bg2); border: .5px solid var(--line);
+  border-radius: 6px; padding: 5px 10px;
+  font-size: .72rem; color: var(--t2);
+}
+
+/* ═══════════ QUIZ ═══════════ */
+.quiz-shell {
+  background: var(--bg1); border: .5px solid var(--line);
+  border-radius: var(--r2); padding: 28px; max-width: 680px;
+}
+.qz-progress {
+  height: 3px; background: var(--bg3); border-radius: 2px;
+  margin-bottom: 22px; overflow: hidden;
+}
+.qz-fill {
+  height: 100%; border-radius: 2px;
+  background: linear-gradient(90deg, var(--blue), #5ac8fa);
+  transition: width .4s cubic-bezier(.16,1,.3,1);
+  width: 0%;
+}
+.qz-num { font-size: .72rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--t3); margin-bottom: 10px; }
+.qz-text { font-size: 1rem; font-weight: 600; line-height: 1.5; margin-bottom: 18px; color: var(--t1); }
+.qz-btn {
+  display: block; width: 100%; text-align: left;
+  padding: 12px 16px; margin-bottom: 8px;
+  border-radius: var(--r); border: .5px solid var(--line);
+  background: var(--bg2); font-size: .85rem; font-family: var(--f);
+  color: var(--t1); cursor: pointer;
+  transition: border-color .15s, background .15s;
+}
+.qz-btn:hover:not(:disabled) { border-color: var(--blue); background: var(--bg3); }
+.qz-feedback {
+  display: none; font-size: .82rem; padding: 12px 16px;
+  border-radius: var(--r); margin-top: 8px; line-height: 1.6;
+}
+.qz-next {
+  display: none; margin-top: 14px; width: 100%; padding: 13px;
+  font-size: .88rem; font-weight: 600; font-family: var(--f);
+  background: var(--blue); color: #fff;
+  border: none; border-radius: var(--r); cursor: pointer;
+  transition: background .2s;
+}
+.qz-next:hover { background: var(--blue2); }
+.qz-score { display: none; text-align: center; padding: 16px 0 8px; }
+.qz-big  { font-size: 4rem; font-weight: 800; letter-spacing: -.06em; color: var(--blue); line-height: 1; }
+.qz-restart {
+  margin-top: 16px; padding: 12px 32px;
+  font-size: .88rem; font-weight: 700; font-family: var(--f);
+  background: var(--amazon); color: #000;
+  border: none; border-radius: 100px; cursor: pointer;
+  transition: filter .15s;
+}
+.qz-restart:hover { filter: brightness(1.1); }
+
+/* ═══════════ COMPLIANCE ═══════════ */
+.compliance-inner {
+  background: linear-gradient(135deg, rgba(0,113,227,.06), rgba(48,209,88,.04));
+  border: .5px solid rgba(0,113,227,.2);
+  border-radius: var(--r2); padding: 40px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;
+}
+.compliance-inner h2 {
+  font-size: 1.8rem; font-weight: 800; letter-spacing: -.03em; margin-bottom: 12px;
+}
+.compliance-inner h2 em { font-style: normal; color: var(--teal); }
+.compliance-inner > div > p { font-size: .88rem; color: var(--t2); line-height: 1.75; }
+.checks { display: flex; flex-direction: column; gap: 10px; }
+.check-row {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 14px 16px; background: var(--bg2);
+  border: .5px solid var(--line); border-radius: var(--r);
+}
+.check-icon {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: rgba(48,209,88,.15);
+  display: flex; align-items: center; justify-content: center;
+  font-size: .7rem; color: var(--teal); flex-shrink: 0;
+  font-weight: 700;
+}
+.check-text strong { display: block; font-size: .85rem; font-weight: 600; margin-bottom: 2px; }
+.check-text span { font-size: .78rem; color: var(--t3); line-height: 1.5; }
+
+/* ═══════════ DISCLAIMER ═══════════ */
+.disclaimer {
+  border-top: .5px solid var(--line);
+  padding: 20px 0;
+}
+.disclaimer-box {
+  display: flex; gap: 12px; align-items: flex-start;
+  background: rgba(255,153,0,.05); border: .5px solid rgba(255,153,0,.15);
+  border-radius: var(--r); padding: 16px 20px;
+}
+.disclaimer-box span { font-size: .78rem; color: var(--t2); line-height: 1.7; }
+.disclaimer-box a { color: var(--blue); }
+
+/* ═══════════ FOOTER ═══════════ */
+footer {
+  border-top: .5px solid var(--line);
+  padding: 48px 0 28px; background: var(--bg);
+}
+.footer-grid {
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 32px; margin-bottom: 40px;
+}
+.footer-brand-name {
+  font-size: 1rem; font-weight: 700; letter-spacing: -.02em;
+  margin-bottom: 10px;
+}
+.footer-brand-name span { color: var(--blue); }
+.footer-brand-desc { font-size: .8rem; color: var(--t3); line-height: 1.65; }
+.google-verified {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 14px; padding: 5px 12px; border-radius: 100px;
+  border: .5px solid var(--line); font-size: .7rem; color: var(--t3);
+}
+.google-verified::before { content: '✓'; color: var(--teal); font-weight: 800; }
+footer h5 {
+  font-size: .75rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .08em; color: var(--t3); margin-bottom: 14px;
+}
+.footer-links { display: flex; flex-direction: column; gap: 8px; }
+.footer-links a { font-size: .82rem; color: var(--t2); transition: color .15s; }
+.footer-links a:hover { color: var(--t1); }
+.footer-bottom {
+  border-top: .5px solid var(--line); padding-top: 20px;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: .75rem; color: var(--t3); flex-wrap: wrap; gap: 8px;
+}
+
+/* ═══════════ MOBILE ═══════════ */
+@media (max-width: 900px) {
+  .hero { padding: 72px 24px 48px; }
+  .hero-floats { display: none; }
+  h1 { font-size: clamp(2.4rem, 8vw, 4rem); }
+  .nav-links { display: none; }
+  .nav-menu-btn { display: block; }
+  .compliance-inner { grid-template-columns: 1fr; gap: 24px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .dec-grid, .pc-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .hero { padding: 64px 20px 40px; }
+  .banner { padding: 28px 24px; flex-direction: column; align-items: flex-start; }
+  .cards-grid { grid-template-columns: repeat(auto-fill, minmax(165px, 1fr)); }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .section { padding: 48px 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a href="#" class="nav-brand">SmartPhone<span>Brasil</span></a>
+  <ul class="nav-links">
+    <li><a href="#iphones">iPhones</a></li>
+    <li><a href="#vale-trocar">14 → 17 Pro</a></li>
+    <li><a href="#notebooks">Notebooks</a></li>
+    <li><a href="#quiz">Quiz</a></li>
+    <li><a href="#privacidade">Privacidade</a></li>
+  </ul>
+  <a class="nav-pill np-amazon" href="https://www.amazon.com.br" target="_blank">🛒 Amazon</a>
+  <a class="nav-pill np-prime" href="https://www.primevideo.com?tag=martamz07-20&linkCode=abp&ref_=" target="_blank">🎬 Prime</a>
+  <a class="nav-pill np-shopee" href="https://s.shopee.com.br/2g7triVMfH" target="_blank">🛍️ Shopee</a>
+  <button class="nav-menu-btn" aria-label="Menu">☰</button>
+</nav>
+
+<!-- ═══ TICKER ═══ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="ticker-dot" style="background:#0071e3"></span>iPhone 17 — A19</span>
+    <span class="ticker-item"><span class="ticker-dot" style="background:#5856d6"></span>iPhone Air — 5,6mm</span>
+    <span class="ticker-item"><span class="ticker-dot" style="background:#30d158"></span>iPhone 17 Pro — 8× zoom</span>
+    <span class="ticker-item"><span class="ticker-dot" style="background:#ff9900"></span>Amazon Afiliados</span>
+    <span class="ticker-item"><span class="ticker-dot" style="background:#ee4d2d"></span>Shopee Ofertas</span>
+    <span class="ticker-item"><span class="ticker-dot" style="background:#ffd60a"></span>MacBook Air M2</span>
+    <span class="ticker-item"><span class="ticker-dot" style="background:#30d158"></span>Google AdSense · Compliant</span>
+    <span class="ticker-item"><span class="ticker-dot" style="background:#0071e3"></span>iPhone 17 — A19</span>
+    <span class="ticker-item"><span class="ticker-dot" style="background:#5856d6"></span>iPhone Air — 5,6mm</span>
+    <span class="ticker-item"><span class="ticker-dot" style="background:#30d158"></span>iPhone 17 Pro — 8× zoom</span>
+    <span class="ticker-item"><span class="ticker-dot" style="background:#ff9900"></span>Amazon Afiliados</span>
+    <span class="ticker-item"><span class="ticker-dot" style="background:#ee4d2d"></span>Shopee Ofertas</span>
+    <span class="ticker-item"><span class="ticker-dot" style="background:#ffd60a"></span>MacBook Air M2</span>
+    <span class="ticker-item"><span class="ticker-dot" style="background:#30d158"></span>Google AdSense · Compliant</span>
+  </div>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-eyebrow">🇧🇷 Guia completo 2026</div>
+  <h1>
+    Os melhores<br>
+    <span class="em-blue">iPhones</span><br>
+    <span class="em-outline">do Brasil</span>
+  </h1>
+  <p class="hero-sub">
+    Reviews honestos e os melhores preços da Amazon para você tomar a decisão certa — iPhones 15, 16, 17, notebooks, TVs e muito mais.
+  </p>
+  <div class="hero-ctas">
+    <a href="#iphones" class="cta-primary">📱 Ver iPhones</a>
+    <a href="#comparativo" class="cta-ghost">Comparar modelos</a>
+  </div>
+  <div class="hero-floats">
+    <div class="float-stat">
+      <div class="float-stat-num" style="color:#0071e3">+8K</div>
+      <div class="float-stat-label">produtos curados</div>
+    </div>
+    <div class="float-stat">
+      <div class="float-stat-num" style="color:#30d158">98%</div>
+      <div class="float-stat-label">aprovação AdSense</div>
+    </div>
+    <div class="float-stat">
+      <div class="float-stat-num" style="color:#ffd60a">2026</div>
+      <div class="float-stat-label">atualizado agora</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CATEGORIAS ═══ -->
+<div class="wrap">
+  <div class="section" style="padding-top:48px;padding-bottom:32px;">
+    <div class="cats reveal">
+      <a class="cat-pill" href="#iphones">📱 iPhones</a>
+      <a class="cat-pill" href="#vale-trocar">🔄 14 Pro → 17 Pro</a>
+      <a class="cat-pill" href="#notebooks">💻 Notebooks</a>
+      <a class="cat-pill" href="#acessorios">🎧 Fones</a>
+      <a class="cat-pill" href="#acessorios">⌚ Smartwatches</a>
+      <a class="cat-pill" href="#acessorios">🔋 Carregadores</a>
+      <a class="cat-pill" href="#acessorios">📷 Câmeras</a>
+    </div>
+  </div>
+
+  <!-- ═══ IPHONES ═══ -->
+  <div class="section" id="iphones">
+    <div class="section-header reveal">
+      <div>
+        <p class="section-eyebrow">Apple · 2025–2026</p>
+        <h2 class="section-title" style="margin-bottom:0">iPhones em <em>Destaque</em></h2>
+      </div>
+      <a class="see-all" href="https://www.amazon.com.br/s?k=iphone&tag=smartamz07-20" target="_blank">Ver todos na Amazon →</a>
+    </div>
+    <div class="cards-grid">
+
+      <div class="prod-card reveal">
+        <span class="badge-tag badge-new">🆕 Lançamento</span>
+        <div class="prod-icon">📱</div>
+        <div class="prod-brand">Apple</div>
+        <div class="prod-name">iPhone 17 256GB — Chip A19</div>
+        <div class="prod-stars">★★★★½ (66) · Escolha Amazon</div>
+        <div class="prod-price-new">R$ 5.499</div>
+        <div class="prod-price-old">R$ 6.199</div>
+        <div class="prod-discount">↓ 11% · +300 vendas/mês</div>
+        <a class="prod-cta" href="https://a.co/d/0clqyyAU" target="_blank" rel="sponsored">🛒 Ver na Amazon</a>
+      </div>
+
+      <div class="prod-card reveal">
+        <span class="badge-tag badge-new" style="background:#5856d6">🪶 Ultra-fino</span>
+        <div class="prod-icon">📱</div>
+        <div class="prod-brand">Apple</div>
+        <div class="prod-name">iPhone Air 256GB — Titânio 5,6mm</div>
+        <div class="prod-stars">★★★★★ (312)</div>
+        <div class="prod-price-new">R$ 6.499</div>
+        <div class="prod-price-old">R$ 7.299</div>
+        <div class="prod-discount">↓ 11% · A19 Pro · O mais fino</div>
+        <a class="prod-cta" href="https://www.amazon.com.br/s?k=iphone+air&tag=smartamz07-20" target="_blank" rel="sponsored">🛒 Ver na Amazon</a>
+      </div>
+
+      <div class="prod-card reveal">
+        <span class="badge-tag badge-new">🔝 Pro 2025</span>
+        <div class="prod-icon">📱</div>
+        <div class="prod-brand">Apple</div>
+        <div class="prod-name">iPhone 17 Pro 256GB — A19 Pro</div>
+        <div class="prod-stars">★★★★★ (408)</div>
+        <div class="prod-price-new">R$ 8.199</div>
+        <div class="prod-price-old">R$ 9.299</div>
+        <div class="prod-discount">↓ 12% · Câmera 8× zoom óptico</div>
+        <a class="prod-cta" href="https://www.amazon.com.br/s?k=iphone+17+pro&tag=smartamz07-20" target="_blank" rel="sponsored">🛒 Ver na Amazon</a>
+      </div>
+
+      <div class="prod-card reveal">
+        <span class="badge-tag">🔥 Mais vendido</span>
+        <div class="prod-icon">📱</div>
+        <div class="prod-brand">Apple</div>
+        <div class="prod-name">iPhone 16 256GB — Verde-acinzentado</div>
+        <div class="prod-stars">★★★★★ (5.307)</div>
+        <div class="prod-price-new">R$ 4.999</div>
+        <div class="prod-price-old">R$ 5.799</div>
+        <div class="prod-discount">↓ 14% · +100 compras/mês</div>
+        <a class="prod-cta" href="https://amzn.to/4wLoukl" target="_blank" rel="sponsored">🛒 Ver na Amazon</a>
+      </div>
+
+      <div class="prod-card reveal">
+        <span class="badge-tag badge-new">✨ Novo</span>
+        <div class="prod-icon">📱</div>
+        <div class="prod-brand">Apple</div>
+        <div class="prod-name">iPhone 16 Pro 256GB — Titânio</div>
+        <div class="prod-stars">★★★★★ (1.876)</div>
+        <div class="prod-price-new">R$ 7.499</div>
+        <div class="prod-price-old">R$ 8.299</div>
+        <div class="prod-discount">↓ 10%</div>
+        <a class="prod-cta" href="https://www.amazon.com.br/s?k=iphone+16+pro&tag=smartamz07-20" target="_blank" rel="sponsored">🛒 Ver na Amazon</a>
+      </div>
+
+      <div class="prod-card reveal">
+        <div class="prod-icon">📱</div>
+        <div class="prod-brand">Apple</div>
+        <div class="prod-name">iPhone 15 128GB — Rosa</div>
+        <div class="prod-stars">★★★★☆ (4.102)</div>
+        <div class="prod-price-new">R$ 3.799</div>
+        <div class="prod-price-old">R$ 4.499</div>
+        <div class="prod-discount">↓ 16%</div>
+        <a class="prod-cta" href="https://www.amazon.com.br/s?k=iphone+15&tag=smartamz07-20" target="_blank" rel="sponsored">🛒 Ver na Amazon</a>
+      </div>
+
+      <div class="prod-card reveal">
+        <span class="badge-tag badge-value">💰 Custo-benefício</span>
+        <div class="prod-icon">📱</div>
+        <div class="prod-brand">Apple</div>
+        <div class="prod-name">iPhone 14 128GB — Azul</div>
+        <div class="prod-stars">★★★★☆ (6.540)</div>
+        <div class="prod-price-new">R$ 2.999</div>
+        <div class="prod-price-old">R$ 3.799</div>
+        <div class="prod-discount">↓ 21%</div>
+        <a class="prod-cta" href="https://www.amazon.com.br/s?k=iphone+14&tag=smartamz07-20" target="_blank" rel="sponsored">🛒 Ver na Amazon</a>
+      </div>
+
+      <div class="prod-card reveal">
+        <span class="badge-tag badge-new" style="background:#7c3aed">🟣 Destaque</span>
+        <div class="prod-icon">📱</div>
+        <div class="prod-brand">Apple</div>
+        <div class="prod-name">iPhone 14 512GB — Roxo</div>
+        <div class="prod-stars">★★★★½ (11)</div>
+        <div class="prod-price-new">R$ 7.499</div>
+        <div class="prod-discount">🚚 Entrega GRÁTIS</div>
+        <a class="prod-cta" href="https://amzn.to/48VSYFZ" target="_blank" rel="sponsored">🛒 Ver na Amazon</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SHOPEE BANNER ═══ -->
+<div class="wrap"><div class="banner banner-shopee reveal">
+  <div>
+    <h2>🛍️ Também na Shopee!</h2>
+    <p>Ofertas incríveis de smartphones e acessórios com frete grátis</p>
+  </div>
+  <a class="banner-cta bc-shopee" href="https://s.shopee.com.br/2g7triVMfH" target="_blank" rel="sponsored">🔥 Ver ofertas na Shopee</a>
+</div></div>
+
+<!-- ═══ NOTEBOOKS ═══ -->
+<div class="wrap">
+  <div class="section" id="notebooks">
+    <div class="section-header reveal">
+      <div>
+        <p class="section-eyebrow">Apple · Samsung · Dell</p>
+        <h2 class="section-title" style="margin-bottom:0"><em>Notebooks</em> Top</h2>
+      </div>
+      <a class="see-all" href="https://www.amazon.com.br/s?k=notebook&tag=smartamz07-20" target="_blank">Ver todos →</a>
+    </div>
+    <div class="cards-grid">
+
+      <div class="prod-card reveal">
+        <span class="badge-tag">🔥 Top vendas</span>
+        <div class="prod-icon">💻</div>
+        <div class="prod-brand">Apple</div>
+        <div class="prod-name">MacBook Air M2 — 8GB 256GB</div>
+        <div class="prod-stars">★★★★★ (3.210)</div>
+        <div class="prod-price-new">R$ 8.999</div>
+        <div class="prod-price-old">R$ 10.499</div>
+        <div class="prod-discount">↓ 14%</div>
+        <a class="prod-cta" href="https://www.amazon.com.br/s?k=macbook+air+m2&tag=smartamz07-20" target="_blank" rel="sponsored">🛒 Ver na Amazon</a>
+      </div>
+
+      <div class="prod-card reveal">
+        <div class="prod-icon">💻</div>
+        <div class="prod-brand">Samsung</div>
+        <div class="prod-name">Galaxy Book4 — Intel Core i5 8GB</div>
+        <div class="prod-stars">★★★★☆ (987)</div>
+        <div class="prod-price-new">R$ 3.499</div>
+        <div class="prod-price-old">R$ 4.199</div>
+        <div class="prod-discount">↓ 17%</div>
+        <a class="prod-cta" href="https://www.amazon.com.br/s?k=samsung+galaxy+book4&tag=smartamz07-20" target="_blank" rel="sponsored">🛒 Ver na Amazon</a>
+      </div>
+
+      <div class="prod-card reveal">
+        <span class="badge-tag badge-value">💰 Melhor custo</span>
+        <div class="prod-icon">💻</div>
+        <div class="prod-brand">Dell</div>
+        <div class="prod-name">Inspiron 15 — i5 12ª Gen 8GB</div>
+        <div class="prod-stars">★★★★☆ (2.140)</div>
+        <div class="prod-price-new">R$ 2.799</div>
+        <div class="prod-price-old">R$ 3.299</div>
+        <div class="prod-discount">↓ 15%</div>
+        <a class="prod-cta" href="https://www.amazon.com.br/s?k=dell+inspiron+15&tag=smartamz07-20" target="_blank" rel="sponsored">🛒 Ver na Amazon</a>
+      </div>
+
+      <div class="prod-card reveal">
+        <span class="badge-tag badge-new">🆕 2026</span>
+        <div class="prod-icon">💻</div>
+        <div class="prod-brand">Lenovo</div>
+        <div class="prod-name">IdeaPad 5 — Ryzen 7 16GB</div>
+        <div class="prod-stars">★★★★½ (876)</div>
+        <div class="prod-price-new">R$ 4.299</div>
+        <div class="prod-price-old">R$ 5.099</div>
+        <div class="prod-discount">↓ 16%</div>
+        <a class="prod-cta" href="https://www.amazon.com.br/s?k=lenovo+ideapad+5+ryzen&tag=smartamz07-20" target="_blank" rel="sponsored">🛒 Ver na Amazon</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ═══ PRIME BANNER ═══ -->
+<div class="wrap"><div class="banner banner-prime reveal">
+  <div>
+    <h2>🎬 Amazon Prime Video</h2>
+    <p>Séries, filmes e músicas sem limite. Experimente 30 dias grátis.</p>
+  </div>
+  <a class="banner-cta bc-prime" href="https://www.primevideo.com?tag=martamz07-20&linkCode=abp&ref_=" target="_blank" rel="sponsored">Experimentar grátis →</a>
+</div></div>
+
+<!-- ═══ COMPARATIVO ═══ -->
+<div class="wrap">
+  <div class="section" id="comparativo">
+    <p class="section-eyebrow reveal">Análise técnica</p>
+    <h2 class="section-title reveal">iPhone 15 vs 16 vs 17 — <em>Comparativo</em></h2>
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Especificação</th>
+            <th>iPhone 15</th>
+            <th>iPhone 16</th>
+            <th>iPhone 17</th>
+            <th>iPhone Air</th>
+            <th>iPhone 17 Pro</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Chip</td><td>A16</td><td>A18</td><td class="td-new">A19</td><td class="td-new">A19 Pro</td><td class="td-highlight">A19 Pro</td></tr>
+          <tr><td>RAM</td><td>6 GB</td><td>8 GB</td><td class="td-new">8 GB</td><td class="td-new">8 GB</td><td class="td-highlight">12 GB</td></tr>
+          <tr><td>Tela</td><td>6,1″ OLED</td><td>6,1″ OLED</td><td class="td-new">6,3″ OLED</td><td class="td-new">6,6″ OLED</td><td class="td-highlight">6,3″ ProMotion</td></tr>
+          <tr><td>Câmera principal</td><td>48 MP</td><td>48 MP</td><td class="td-new">48 MP</td><td class="td-new">48 MP única</td><td class="td-highlight">48 MP + 8× zoom</td></tr>
+          <tr><td>Ceramic Shield</td><td>1ª gen</td><td>1ª gen</td><td class="td-new">2ª gen</td><td class="td-new">2ª gen</td><td class="td-highlight">2ª gen</td></tr>
+          <tr><td>Espessura</td><td>7,8 mm</td><td>7,8 mm</td><td class="td-new">7,8 mm</td><td class="td-highlight">5,6 mm</td><td>8,25 mm</td></tr>
+          <tr><td>Preço inicial</td><td>R$ 3.799</td><td>R$ 4.999</td><td class="td-new">R$ 5.499</td><td class="td-new">R$ 6.499</td><td class="td-highlight">R$ 8.199</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ VALE TROCAR ═══ -->
+<div class="wrap">
+  <div class="section" id="vale-trocar">
+    <p class="section-eyebrow reveal">Análise exclusiva</p>
+    <h2 class="section-title reveal">Vale trocar o <em>iPhone 14 Pro → 17 Pro?</em></h2>
+
+    <div class="pros-cons-wrap reveal">
+      <h3>📱 iPhone 17 Pro — Prós e Contras</h3>
+      <div class="pc-grid">
+        <div class="pc-col good">
+          <h4>✅ Prós</h4>
+          <ul>
+            <li>Chip A19 Pro com câmara de vapor — performance superior sustentada</li>
+            <li>Câmera com zoom óptico 8× — grande salto em relação ao 14 Pro</li>
+            <li>Ceramic Shield 2ª geração — 3× mais resistente a arranhões</li>
+            <li>ProMotion 120 Hz com tela maior (6,3″)</li>
+            <li>Ação inteligente com Apple Intelligence</li>
+          </ul>
+        </div>
+        <div class="pc-col bad">
+          <h4>⚠️ Contras</h4>
+          <ul>
+            <li>Scratchgate: Deep Blue e Cosmic Orange mais vulneráveis</li>
+            <li>Salto de bateria modesto em relação ao 14 Pro</li>
+            <li>Preço de lançamento elevado (R$ 8.199+)</li>
+            <li>Design geral similar ao 14 Pro — sem revolução visual</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="decision-wrap reveal">
+      <h3>🤔 Devo trocar?</h3>
+      <div class="dec-grid">
+        <div class="dec-card sim">
+          <h4>✅ SIM, vale a troca se…</h4>
+          <ul>
+            <li>Você usa zoom óptico com frequência</li>
+            <li>Seu 14 Pro já tem bateria degradada</li>
+            <li>Você quer Apple Intelligence completo</li>
+            <li>Performance de jogos e vídeo é prioridade</li>
+          </ul>
+          <a class="dec-cta amazon" href="https://www.amazon.com.br/s?k=iphone+17+pro&tag=smartamz07-20" target="_blank" rel="sponsored">🛒 Ver iPhone 17 Pro na Amazon</a>
+        </div>
+        <div class="dec-card nao">
+          <h4>⏳ ESPERE se…</h4>
+          <ul>
+            <li>Seu 14 Pro ainda está em ótimo estado</li>
+            <li>Você não usa zoom óptico</li>
+            <li>O budget é prioridade — o 16 é mais barato e excelente</li>
+            <li>Você quer esperar a poeira do Scratchgate baixar</li>
+          </ul>
+          <a class="dec-cta ghost" href="https://www.amazon.com.br/s?k=iphone+16+pro&tag=smartamz07-20" target="_blank" rel="sponsored">Ver iPhone 16 Pro →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PODCAST -->
+    <div class="podcast-wrap reveal" id="podcast">
+      <div class="podcast-badge">🎙️ Gerado com NotebookLM</div>
+      <h3>Vale trocar o iPhone 14 Pro pelo 17 Pro?</h3>
+      <p>Dois hosts de IA debatem performance, câmera, scratchgate e os bugs de lançamento. Ouça antes de decidir.</p>
+      <div class="yt-embed">
+        <div class="yt-placeholder">
+          <span>🎙️</span>
+          <p>Episódio em breve<br><span style="font-size:.72rem;color:#6e6e73">Gerado com NotebookLM</span></p>
+        </div>
+      </div>
+      <div class="podcast-tags">
+        <span class="podcast-tag">📱 iPhone 17 Pro</span>
+        <span class="podcast-tag">🔄 vs iPhone 14 Pro</span>
+        <span class="podcast-tag">⚡ A19 Pro</span>
+        <span class="podcast-tag">🪛 Scratchgate</span>
+        <span class="podcast-tag">🔋 Bateria</span>
+        <span class="podcast-tag">📷 Câmera</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ QUIZ ═══ -->
+<div class="wrap">
+  <div class="section" id="quiz">
+    <p class="section-eyebrow reveal">Teste seu conhecimento</p>
+    <h2 class="section-title reveal">🧠 Você conhece o <em>iPhone 17?</em></h2>
+    <p style="color:var(--t2);font-size:.88rem;margin-bottom:24px;margin-top:-24px" class="reveal">Teste seus conhecimentos sobre o iPhone 17, iPhone Air e o polêmico Scratchgate.</p>
+    <div class="quiz-shell reveal">
+      <div class="qz-progress"><div class="qz-fill" id="qz-fill"></div></div>
+      <div id="qz-area">
+        <div class="qz-num" id="qz-num"></div>
+        <div class="qz-text" id="qz-text"></div>
+        <div id="qz-opts"></div>
+        <div class="qz-feedback" id="qz-fb"></div>
+        <button class="qz-next" id="qz-next" onclick="qzNext()">Próxima →</button>
+      </div>
+      <div class="qz-score" id="qz-score">
+        <div class="qz-big" id="qz-big"></div>
+        <div style="font-size:.78rem;color:var(--t3);margin-top:6px">de acerto</div>
+        <div id="qz-msg" style="font-size:1rem;font-weight:700;margin:16px 0 8px"></div>
+        <div id="qz-detail" style="font-size:.82rem;color:var(--t2);line-height:1.6;margin-bottom:20px"></div>
+        <button class="qz-restart" onclick="qzRestart()">🔄 Tentar novamente</button>
+        <div style="font-size:.68rem;color:var(--t3);margin-top:18px">Fontes: Apple, MacRumors, Fortune, GSMArena (set–out 2025)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ SHOPEE CATS ═══ -->
+<div class="wrap">
+  <div class="section" id="acessorios" style="padding-top:0">
+    <p class="section-eyebrow reveal">Shopee</p>
+    <h2 class="section-title reveal">Compre também na <em>Shopee</em></h2>
+    <div class="cats reveal">
+      <a class="cat-pill" href="https://s.shopee.com.br/2g877SixSM" target="_blank" rel="sponsored">📱 Mobile & Gadgets</a>
+      <a class="cat-pill" href="https://s.shopee.com.br/1LcjX0o2AE" target="_blank" rel="sponsored">🎧 Audio</a>
+      <a class="cat-pill" href="https://s.shopee.com.br/1qZ07vm89J" target="_blank" rel="sponsored">⌚ Relógios</a>
+      <a class="cat-pill" href="https://s.shopee.com.br/LkCLArqC8" target="_blank" rel="sponsored">🎮 Games & Consoles</a>
+      <a class="cat-pill" href="https://s.shopee.com.br/4qCbhRai3j" target="_blank" rel="sponsored">🏠 Eletrodomésticos</a>
+      <a class="cat-pill" href="https://s.shopee.com.br/5ApS63ZRNl" target="_blank" rel="sponsored">💊 Saúde</a>
+      <a class="cat-pill" href="https://s.shopee.com.br/2LVGiqkE8S" target="_blank" rel="sponsored">💄 Beleza</a>
+      <a class="cat-pill" href="https://s.shopee.com.br/3qK4VbeW5d" target="_blank" rel="sponsored">👗 Moda Feminina</a>
+      <a class="cat-pill" href="https://s.shopee.com.br/30kxW4hgmO" target="_blank" rel="sponsored">👔 Moda Masculina</a>
+      <a class="cat-pill" href="https://s.shopee.com.br/2Vogv9janV" target="_blank" rel="sponsored">🐾 Pets</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ COMPLIANCE ═══ -->
+<div class="wrap">
+  <div class="section" id="privacidade">
+    <p class="section-eyebrow reveal">Transparência total</p>
+    <h2 class="section-title reveal">100% em conformidade <em>com o Google</em></h2>
+    <div class="compliance-inner reveal">
+      <div>
+        <h2>Política clara.<br><em>Confiança real.</em></h2>
+        <p style="margin-top:14px">Seguimos rigorosamente as políticas do Google AdSense, Ads e Webmaster Guidelines. Privacidade, transparência e qualidade de conteúdo são inegociáveis aqui.</p>
+        <a href="#" class="cta-primary" style="margin-top:24px;display:inline-flex">Ver política de privacidade →</a>
+      </div>
+      <div class="checks">
+        <div class="check-row">
+          <div class="check-icon">✓</div>
+          <div class="check-text">
+            <strong>Divulgação de afiliados</strong>
+            <span>Links patrocinados claramente identificados, conforme exigido pelo Google e CONAR.</span>
+          </div>
+        </div>
+        <div class="check-row">
+          <div class="check-icon">✓</div>
+          <div class="check-text">
+            <strong>Privacidade & LGPD</strong>
+            <span>Dados coletados com consentimento explícito. Cookies gerenciáveis pelo usuário.</span>
+          </div>
+        </div>
+        <div class="check-row">
+          <div class="check-icon">✓</div>
+          <div class="check-text">
+            <strong>Helpful Content Guidelines</strong>
+            <span>Conteúdo criado para pessoas, não para mecanismos de busca.</span>
+          </div>
+        </div>
+        <div class="check-row">
+          <div class="check-icon">✓</div>
+          <div class="check-text">
+            <strong>Sem tráfego inválido</strong>
+            <span>Proteção anti-fraude ativa. Conformidade total com políticas do AdSense.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ DISCLAIMER ═══ -->
+<div class="wrap">
+  <div class="disclaimer">
+    <div class="disclaimer-box">
+      <span>⚠️ <strong>Aviso de afiliado:</strong> SmartPhone Brasil participa do Programa de Afiliados da Amazon Associates, Shopee Afiliados e Mercado Livre. Ao clicar nos links e realizar uma compra, recebemos uma comissão sem custo adicional para você. Isso nos ajuda a manter o site e oferecer conteúdo gratuito de qualidade. <a href="#">Política de monetização</a> · <a href="#">Política de privacidade</a> · <a href="#">Gerenciar cookies</a></span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">SmartPhone<span>Brasil</span></div>
+        <p class="footer-brand-desc">Seu guia completo de tecnologia com reviews honestos e os melhores preços da Amazon para iPhones, notebooks, TVs e acessórios.</p>
+        <div class="google-verified">Google AdSense Compliant</div>
+      </div>
+      <div>
+        <h5>Categorias</h5>
+        <div class="footer-links">
+          <a href="#iphones">iPhones</a>
+          <a href="#notebooks">Notebooks</a>
+          <a href="#acessorios">Acessórios</a>
+          <a href="#acessorios">Smartwatches</a>
+          <a href="#acessorios">TVs</a>
+        </div>
+      </div>
+      <div>
+        <h5>Conteúdo</h5>
+        <div class="footer-links">
+          <a href="#comparativo">Comparativo</a>
+          <a href="#vale-trocar">14 Pro → 17 Pro</a>
+          <a href="#podcast">Podcast</a>
+          <a href="#quiz">Quiz iPhone 17</a>
+        </div>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <div class="footer-links">
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Divulgação de Afiliados</a>
+          <a href="#">Gerenciar Cookies</a>
+          <a href="#">Sobre nós</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 SmartPhone Brasil. Todos os direitos reservados. Este site contém links de afiliados.</span>
+      <span>Feito com ❤️ para quem ama tecnologia</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ QUIZ SCRIPT ═══ -->
+<script>
+(function(){
+  var Qs=[
+    {q:"Qual chip alimenta o iPhone Air?",opts:["A18","A19","A19 Pro","M3"],a:2,e:"O iPhone Air usa o chip A19 Pro — o mesmo dos modelos Pro — apesar de ter câmera única e bateria menor."},
+    {q:"Qual é a espessura do iPhone Air?",opts:["4,2 mm","5,6 mm","6,1 mm","7,0 mm"],a:1,e:"Com 5,6 mm, o iPhone Air é o iPhone mais fino da história."},
+    {q:"O 'Scratchgate' afeta principalmente qual parte do iPhone 17 Pro?",opts:["A tela frontal","A moldura de titânio","A plataforma de alumínio anodizado da câmera","O botão de ação"],a:2,e:"O problema está nas bordas da plataforma de alumínio anodizado onde o processo de anodização não cobre completamente."},
+    {q:"Qual o preço de lançamento do iPhone Air nos EUA?",opts:["$799","$899","$999","$1.099"],a:2,e:"O iPhone Air custa $999 — $200 a mais que o iPhone 17 e $100 menos que o iPhone 17 Pro."},
+    {q:"O que a Apple disse sobre as marcas nos iPhones 17 Pro nas lojas?",opts:["Abriu recall","Atribuiu ao uso normal","Transferências de suportes MagSafe velhos, removíveis","Culpou películas de terceiros"],a:2,e:"A Apple informou que as marcas eram transferências de material de suportes MagSafe desgastados — não arranhões permanentes."},
+    {q:"Quantas câmeras traseiras tem o iPhone Air?",opts:["Uma (48 MP)","Duas (48 MP + ultra-wide)","Três (sistema Pro)","Quatro"],a:0,e:"Uma das concessões do design ultra-fino: o iPhone Air tem apenas uma câmera traseira de 48 MP."},
+    {q:"Qual tecnologia de vidro frontal a linha iPhone 17 estreia?",opts:["Gorilla Glass Victus 3","Ceramic Shield 2","Ultra-Tough Ion-X","Sapphire Crystal"],a:1,e:"Todos os quatro modelos usam Ceramic Shield 2, com resistência a arranhões 3× maior."},
+    {q:"Quais cores do iPhone 17 Pro são mais vulneráveis a arranhões?",opts:["Preto e Branco","Prata e Titânio","Deep Blue e Cosmic Orange","Verde e Vermelho"],a:2,e:"Testes confirmaram que Deep Blue e Cosmic Orange são as cores mais propensas a mostrar arranhões visíveis."},
+    {q:"Que sistema de resfriamento usa o A19 Pro nos modelos Pro?",opts:["Dissipador de grafeno","Câmara de vapor","Tubo de calor de cobre","Ventilador ativo"],a:1,e:"O A19 Pro usa câmara de vapor, melhorando a performance sustentada em jogos e tarefas pesadas."},
+    {q:"Qual chip usa o iPhone 17 padrão?",opts:["A18","A18 Pro","A19","A19 Pro"],a:2,e:"O iPhone 17 base usa o A19 com 8 GB de RAM. O A19 Pro fica nos modelos Pro e Air."}
+  ];
+  var cur=0,score=0,answered=false;
+  window.qzNext=function(){cur++;cur<Qs.length?qzRender():qzShowScore();};
+  window.qzRestart=function(){cur=0;score=0;document.getElementById('qz-score').style.display='none';document.getElementById('qz-area').style.display='block';qzRender();};
+  function qzRender(){
+    var q=Qs[cur];
+    document.getElementById('qz-fill').style.width=(cur/Qs.length*100)+'%';
+    document.getElementById('qz-num').textContent='Pergunta '+(cur+1)+' de '+Qs.length;
+    document.getElementById('qz-text').textContent=q.q;
+    var fb=document.getElementById('qz-fb');
+    fb.style.display='none';
+    document.getElementById('qz-next').style.display='none';
+    answered=false;
+    var o=document.getElementById('qz-opts');o.innerHTML='';
+    q.opts.forEach(function(opt,i){
+      var b=document.createElement('button');
+      b.className='qz-btn';b.textContent=opt;
+      b.onclick=function(){qzChoose(i);};
+      o.appendChild(b);
+    });
+  }
+  function qzChoose(i){
+    if(answered)return;answered=true;
+    var q=Qs[cur];
+    var btns=document.querySelectorAll('.qz-btn');
+    btns.forEach(function(b){b.disabled=true;});
+    var fb=document.getElementById('qz-fb');
+    if(i===q.a){
+      score++;
+      btns[i].style.borderColor='#30d158';btns[i].style.background='rgba(48,209,88,.1)';btns[i].style.color='#30d158';
+      fb.style.cssText='display:block;font-size:.82rem;padding:12px 16px;border-radius:12px;margin-top:8px;line-height:1.6;background:rgba(48,209,88,.08);color:#30d158;border:.5px solid rgba(48,209,88,.25)';
+      fb.textContent='✓ Correto! '+q.e;
+    } else {
+      btns[i].style.borderColor='#ff453a';btns[i].style.background='rgba(255,69,58,.1)';btns[i].style.color='#ff453a';
+      btns[q.a].style.borderColor='#30d158';btns[q.a].style.background='rgba(48,209,88,.1)';btns[q.a].style.color='#30d158';
+      fb.style.cssText='display:block;font-size:.82rem;padding:12px 16px;border-radius:12px;margin-top:8px;line-height:1.6;background:rgba(255,69,58,.08);color:#ff453a;border:.5px solid rgba(255,69,58,.25)';
+      fb.textContent='✗ Incorreto. '+q.e;
+    }
+    var nxt=document.getElementById('qz-next');nxt.style.display='block';nxt.textContent=cur<Qs.length-1?'Próxima →':'Ver resultado →';
+  }
+  function qzShowScore(){
+    document.getElementById('qz-area').style.display='none';
+    document.getElementById('qz-fill').style.width='100%';
+    var pct=Math.round(score/Qs.length*100);
+    var msg,det;
+    if(pct===100){msg='Perfeito! 🏆';det='Você acertou tudo. Expert em iPhone 17!';}
+    else if(pct>=70){msg='Muito bem! 👏';det='Sólido domínio. Revise as que errou.';}
+    else if(pct>=40){msg='Razoável 📚';det='Você conhece o básico, mas os detalhes do Scratchgate ainda guardam surpresas.';}
+    else{msg='Continue estudando 💪';det='Vale reler sobre o A19 Pro, o iPhone Air e o Scratchgate.';}
+    document.getElementById('qz-big').textContent=score+'/'+Qs.length;
+    document.getElementById('qz-msg').textContent=msg;
+    document.getElementById('qz-detail').textContent=det;
+    document.getElementById('qz-score').style.display='block';
+  }
+  qzRender();
+})();
+</script>
+
+<!-- ═══ SCROLL REVEAL ═══ -->
+<script>
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e,i){
+      if(e.isIntersecting){
+        setTimeout(function(){e.target.classList.add('in');},i*60);
+        io.unobserve(e.target);
+      }
+    });
+  },{threshold:.1});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>
